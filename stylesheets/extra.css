@@ -1,0 +1,307 @@
+/* ============================================================
+   Tabla Beginner Lessons — visual identity
+   Grounded in the instrument: syahi (black tuning circle), the
+   crimson cushion the drums rest on, sheesham wood, brass tuning
+   hardware, and warm ochre practice-book paper.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap');
+
+:root {
+  --ink:     #241C17;   /* syahi / gaab — the black centre */
+  --crimson: #9E2A3C;   /* velvet cushion ring (primary accent) */
+  --sienna:  #B5744A;   /* dayan wood shell */
+  --brass:   #C6972F;   /* tuning hardware (sparing) */
+  --ivory:   #F6F1E7;   /* warm ochre practice paper */
+  --ivory-2: #EFE7D7;   /* slightly deeper paper for panels */
+  --line:    #E0D5C2;   /* hairline on paper */
+
+  /* Map onto Material's tokens */
+  --md-primary-fg-color:        var(--ink);
+  --md-primary-fg-color--light: #3a2d24;
+  --md-primary-fg-color--dark:  #17110d;
+  --md-accent-fg-color:         var(--crimson);
+  --md-default-bg-color:        var(--ivory);
+  --md-typeset-a-color:         var(--crimson);
+
+  --md-text-font: "Spectral";
+  --md-code-font: "IBM Plex Mono";
+}
+
+/* ---- Base paper ---- */
+.md-main, .md-container { background: var(--ivory); }
+body { -webkit-font-smoothing: antialiased; }
+
+.md-typeset { color: var(--ink); font-size: .8rem; }
+.md-typeset p, .md-typeset li { line-height: 1.7; }
+
+/* ---- Display type ---- */
+.md-typeset h1 {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: .01em;
+  font-size: 2.1rem;
+  line-height: 1.15;
+  margin: .2rem 0 1.2rem;
+}
+
+/* Section headings (Theme / Palta N / Tihaai) get the gaab-disc marker */
+.md-typeset h2 {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  color: var(--ink);
+  font-size: 1.35rem;
+  margin: 2.4rem 0 .9rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.md-typeset h2::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 50%;
+  transform: translateY(-50%);
+  width: .95rem; height: .95rem;
+  border-radius: 50%;
+  background: var(--ink);
+  box-shadow: 0 0 0 2px var(--brass), 0 0 0 3px rgba(0,0,0,.08);
+}
+
+.md-typeset h3 { font-family: "Marcellus", serif; font-weight: 400; color: var(--md-primary-fg-color--light); }
+
+/* ---- Bols: the hero material. Monospace so syllables align like beats. ---- */
+.md-typeset pre > code {
+  font-family: "IBM Plex Mono", monospace;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--crimson);
+  border-radius: 4px;
+  font-size: .92rem;
+  line-height: 1.9;
+  color: #2c211a;
+  padding: 1rem 1.1rem;
+  white-space: pre-wrap;      /* wrap long bol phrases instead of clipping */
+  overflow-wrap: anywhere;
+}
+.md-typeset pre { box-shadow: 0 1px 0 rgba(180,116,74,.12); }
+
+/* Inline code (e.g. bols mentioned in prose) */
+.md-typeset code {
+  background: var(--ivory-2);
+  color: var(--crimson);
+  border-radius: 3px;
+}
+
+/* ---- "Alternate for Palta N" notes ---- */
+.md-typeset blockquote {
+  border-left: 3px solid var(--sienna);
+  background: var(--ivory-2);
+  border-radius: 0 4px 4px 0;
+  color: #3a2d24;
+}
+.md-typeset blockquote strong { color: var(--sienna); font-family: "Spectral"; }
+
+/* ---- Video players ---- */
+.md-typeset iframe,
+.md-typeset video {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 6px 22px rgba(36,28,23,.22);
+  margin: .3rem 0 1.6rem;
+  background: #000;
+}
+
+/* ---- Header / nav chrome ---- */
+.md-header { background: var(--ink); box-shadow: 0 1px 0 var(--brass); }
+.md-tabs   { background: var(--ink); }
+.md-header__title { font-family: "Marcellus", serif; letter-spacing: .02em; }
+
+/* Sidebar section labels = brass eyebrows */
+.md-nav__title { font-family: "Marcellus", serif; color: var(--sienna); }
+.md-nav { font-size: .72rem; }
+.md-nav__link--active { color: var(--crimson) !important; }
+
+/* ============================================================
+   HERO — home page only (.tabla-hero injected in index.md)
+   Opens on the Teentaal theka in Devanagari: the signature.
+   ============================================================ */
+.tabla-hero {
+  margin: -1.2rem 0 2.4rem;
+  padding: 2.8rem 2rem 2.4rem;
+  background:
+    radial-gradient(circle at 82% 30%, rgba(198,151,47,.10), transparent 40%),
+    linear-gradient(160deg, #2a2019 0%, var(--ink) 60%, #17110d 100%);
+  border-radius: 12px;
+  color: var(--ivory);
+  position: relative;
+  overflow: hidden;
+}
+/* the gaab disc, drawn in CSS, sitting off the right edge */
+.tabla-hero::after {
+  content: "";
+  position: absolute;
+  right: -70px; top: 50%;
+  transform: translateY(-50%);
+  width: 230px; height: 230px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 34%, #4a3a2e 0%, #1a1310 62%, #0d0907 100%);
+  box-shadow: 0 0 0 10px rgba(198,151,47,.22), inset 0 0 40px rgba(0,0,0,.6);
+  opacity: .9;
+}
+.tabla-hero__eyebrow {
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: .28em;
+  font-size: .62rem;
+  color: var(--brass);
+  margin: 0 0 1.1rem;
+}
+.tabla-hero__label {
+  font-family: "Spectral", serif;
+  font-style: italic;
+  color: #b7a988;
+  margin: .4rem 0 0;
+  font-size: .78rem;
+  position: relative; z-index: 1;
+}
+
+/* the four semesters, as a taal of four vibhags */
+.tabla-vibhags {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .8rem;
+  margin: 1.8rem 0 0;
+}
+.tabla-vibhag {
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--crimson);
+  border-radius: 6px;
+  padding: .9rem 1rem;
+  background: #fffdf8;
+}
+.tabla-vibhag a { font-family: "Marcellus", serif; color: var(--ink) !important; text-decoration: none; }
+.tabla-vibhag .n {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--brass);
+  font-size: .62rem;
+  letter-spacing: .18em;
+  display: block;
+  margin-bottom: .25rem;
+}
+
+@media (max-width: 44rem) {
+  .tabla-vibhags { grid-template-columns: repeat(2, 1fr); }
+  .tabla-hero::after { display: none; }
+}
+
+/* ============================================================
+   TAAL — bols as light text, one syllable per matra (beat), with
+   a small dim count above each. No boxes: syllables flow in a row
+   and wrap naturally; a thin hairline marks each vibhag boundary.
+   Beats auto-number via a CSS counter. Markers: .sam (×), .tali
+   (2/3), .khali (0). Use <div class="beat rest">-</div> for a rest.
+   ============================================================ */
+.taal {
+  counter-reset: matra;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem .1rem;
+  margin: .4rem 0 1.3rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+.taal .beat {
+  counter-increment: matra;
+  position: relative;
+  text-align: center;
+  padding: 1.05rem .55rem .1rem;
+  font-size: .95rem;
+  color: #2c211a;
+  min-width: 2.2rem;
+}
+/* the matra number, sitting above the syllable */
+.taal .beat::before {
+  content: counter(matra);
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  font-size: .58rem;
+  color: #b3a488;
+  letter-spacing: .04em;
+}
+/* vibhag boundaries get a hairline + a small mark tucked under the count */
+.taal .beat.sam,
+.taal .beat.tali,
+.taal .beat.khali { border-left: 1px solid var(--line); margin-left: .5rem; padding-left: .7rem; }
+.taal .beat.sam { border-left-color: var(--crimson); }
+.taal .beat.sam::after,
+.taal .beat.tali::after,
+.taal .beat.khali::after {
+  position: absolute;
+  top: 0; right: .12rem;
+  font-size: .55rem;
+  font-weight: 600;
+}
+.taal .beat.sam::after   { content: "\00d7"; color: var(--crimson); }   /* × */
+.taal .beat.tali::after  { content: "2"; color: var(--sienna); }
+.taal .beat.tali.t3::after { content: "3"; }
+.taal .beat.khali::after { content: "0"; color: #b09b7f; }
+.taal .beat.khali { color: #8a7f6d; }   /* khali section spoken softer */
+.taal .beat.rest { color: #cbb89c; }
+
+/* Numbered practice drills — one exercise per line, brass numerals */
+.md-typeset ol.drills { counter-reset: drill; list-style: none; margin: .6rem 0 1.4rem; padding: 0; }
+.md-typeset ol.drills li {
+  counter-increment: drill;
+  position: relative;
+  padding: .5rem 0 .5rem 2.6rem;
+  border-bottom: 1px solid var(--line);
+}
+.md-typeset ol.drills li::before {
+  content: counter(drill, decimal-leading-zero);
+  position: absolute;
+  left: 0; top: .55rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .72rem;
+  color: var(--brass);
+  letter-spacing: .06em;
+}
+.md-typeset ol.drills code {
+  background: none;
+  color: #2c211a;
+  font-size: .95rem;
+  padding: 0;
+}
+
+/* small label above a taal grid ("Palta — …", "…then the Theme") */
+.taal-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .64rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--sienna);
+  margin: 1rem 0 -.1rem;
+}
+
+/* an annotation chip for non-bol instructions ("× 2", "then theme", "pause") */
+.taal-note {
+  display: inline-block;
+  font-family: "Spectral", serif;
+  font-style: italic;
+  font-size: .78rem;
+  color: var(--sienna);
+  background: var(--ivory-2);
+  border-radius: 4px;
+  padding: .1rem .5rem;
+  margin: -.8rem 0 1.4rem;
+}
+
+@media (max-width: 30rem) {
+  .taal { font-size: .82rem; }
+  .taal .beat { padding: 1.2rem .2rem .4rem; }
+}
+
+/* respect reduced-motion (nothing animates yet, but keep the floor) */
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
