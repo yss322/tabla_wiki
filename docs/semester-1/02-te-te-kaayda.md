@@ -22,7 +22,7 @@
 </div>
 
 <video controls preload="metadata">
-  <source src="../media/te-te-kaayda-theme.mp4" type="video/mp4">
+  <source src="../../media/te-te-kaayda-theme.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
