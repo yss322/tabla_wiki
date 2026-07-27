@@ -1,10 +1,3 @@
-<div class="tabla-hero" markdown="0">
-  <p class="tabla-hero__eyebrow">Teentaal · 16 beats · the first cycle every student learns</p>
-  <p class="tabla-hero__theka"><span class="sam">धा</span> धिं धिं धा · धा धिं धिं धा · धा तिं तिं ता · ता धिं धिं धा</p>
-  <p class="tabla-hero__roman">Dha Dhin Dhin Dha &nbsp; Dha Dhin Dhin Dha &nbsp; Dha Tin Tin Ta &nbsp; Ta Dhin Dhin Dha</p>
-  <p class="tabla-hero__label">The theka of Teentaal — where the hands, the count, and the voice first meet.</p>
-</div>
-
 # Tabla Beginner Lessons
 
 A practice companion for the beginner curriculum: four semesters of exercises,

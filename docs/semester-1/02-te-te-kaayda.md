@@ -2,10 +2,24 @@
 
 ## Theme
 
-```text
-Dha dha te te Dha dha tu na
-Ta ta te te Dha dha tu na
-```
+<div class="taal" markdown="0">
+  <div class="beat sam">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat tali">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">tu</div>
+  <div class="beat">na</div>
+  <div class="beat khali">Ta</div>
+  <div class="beat">ta</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat tali t3">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">tu</div>
+  <div class="beat">na</div>
+</div>
 
 <video controls preload="metadata">
   <source src="../media/te-te-kaayda-theme.mp4" type="video/mp4">
@@ -14,9 +28,37 @@ Ta ta te te Dha dha tu na
 
 ## Palta 1
 
-```text
-(Dha dha te te ) x 2 then theme
-```
+<p class="taal-label">Palta — (Dha dha te te) ×2</p>
+<div class="taal" markdown="0">
+  <div class="beat">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+</div>
+
+<p class="taal-label">…then the Theme</p>
+<div class="taal" markdown="0">
+  <div class="beat sam">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat tali">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">tu</div>
+  <div class="beat">na</div>
+  <div class="beat khali">Ta</div>
+  <div class="beat">ta</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat tali t3">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">tu</div>
+  <div class="beat">na</div>
+</div>
 
 <!-- To add a video: uncomment the line below and paste the 11-char YouTube ID (from an UNLISTED video) in place of VIDEO_ID.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
@@ -24,9 +66,37 @@ Ta ta te te Dha dha tu na
 
 ## Palta 2
 
-```text
-Dha-Dha-te-te te te te te theme
-```
+<p class="taal-label">Palta</p>
+<div class="taal" markdown="0">
+  <div class="beat">Dha</div>
+  <div class="beat">Dha</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+</div>
+
+<p class="taal-label">…then the Theme</p>
+<div class="taal" markdown="0">
+  <div class="beat sam">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat tali">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">tu</div>
+  <div class="beat">na</div>
+  <div class="beat khali">Ta</div>
+  <div class="beat">ta</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat tali t3">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">tu</div>
+  <div class="beat">na</div>
+</div>
 
 <!-- To add a video: uncomment the line below and paste the 11-char YouTube ID (from an UNLISTED video) in place of VIDEO_ID.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
@@ -34,9 +104,63 @@ Dha-Dha-te-te te te te te theme
 
 ## Palta 3
 
-```text
-Dha dha te te te te Dha dha te te te te Dha dha te te (theme x2)
-```
+<p class="taal-label">Palta</p>
+<div class="taal" markdown="0">
+  <div class="beat">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+</div>
+
+<p class="taal-label">…then the Theme ×2</p>
+<div class="taal" markdown="0">
+  <div class="beat sam">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat tali">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">tu</div>
+  <div class="beat">na</div>
+  <div class="beat khali">Ta</div>
+  <div class="beat">ta</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat tali t3">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">tu</div>
+  <div class="beat">na</div>
+</div>
+<div class="taal" markdown="0">
+  <div class="beat sam">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat tali">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">tu</div>
+  <div class="beat">na</div>
+  <div class="beat khali">Ta</div>
+  <div class="beat">ta</div>
+  <div class="beat">te</div>
+  <div class="beat">te</div>
+  <div class="beat tali t3">Dha</div>
+  <div class="beat">dha</div>
+  <div class="beat">tu</div>
+  <div class="beat">na</div>
+</div>
 
 <!-- To add a video: uncomment the line below and paste the 11-char YouTube ID (from an UNLISTED video) in place of VIDEO_ID.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
