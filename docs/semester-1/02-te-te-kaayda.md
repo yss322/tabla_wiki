@@ -7,9 +7,10 @@ Dha dha te te Dha dha tu na
 Ta ta te te Dha dha tu na
 ```
 
-<!-- To add a video: uncomment the line below and paste the 11-char YouTube ID (from an UNLISTED video) in place of VIDEO_ID.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
--->
+<video controls preload="metadata">
+  <source src="../media/te-te-kaayda-theme.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Palta 1
 

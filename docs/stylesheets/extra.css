@@ -1,0 +1,220 @@
+/* ============================================================
+   Tabla Beginner Lessons — visual identity
+   Grounded in the instrument: syahi (black tuning circle), the
+   crimson cushion the drums rest on, sheesham wood, brass tuning
+   hardware, and warm ochre practice-book paper.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap');
+
+:root {
+  --ink:     #241C17;   /* syahi / gaab — the black centre */
+  --crimson: #9E2A3C;   /* velvet cushion ring (primary accent) */
+  --sienna:  #B5744A;   /* dayan wood shell */
+  --brass:   #C6972F;   /* tuning hardware (sparing) */
+  --ivory:   #F6F1E7;   /* warm ochre practice paper */
+  --ivory-2: #EFE7D7;   /* slightly deeper paper for panels */
+  --line:    #E0D5C2;   /* hairline on paper */
+
+  /* Map onto Material's tokens */
+  --md-primary-fg-color:        var(--ink);
+  --md-primary-fg-color--light: #3a2d24;
+  --md-primary-fg-color--dark:  #17110d;
+  --md-accent-fg-color:         var(--crimson);
+  --md-default-bg-color:        var(--ivory);
+  --md-typeset-a-color:         var(--crimson);
+
+  --md-text-font: "Spectral";
+  --md-code-font: "IBM Plex Mono";
+}
+
+/* ---- Base paper ---- */
+.md-main, .md-container { background: var(--ivory); }
+body { -webkit-font-smoothing: antialiased; }
+
+.md-typeset { color: var(--ink); font-size: .8rem; }
+.md-typeset p, .md-typeset li { line-height: 1.7; }
+
+/* ---- Display type ---- */
+.md-typeset h1 {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: .01em;
+  font-size: 2.1rem;
+  line-height: 1.15;
+  margin: .2rem 0 1.2rem;
+}
+
+/* Section headings (Theme / Palta N / Tihaai) get the gaab-disc marker */
+.md-typeset h2 {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  color: var(--ink);
+  font-size: 1.35rem;
+  margin: 2.4rem 0 .9rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.md-typeset h2::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 50%;
+  transform: translateY(-50%);
+  width: .95rem; height: .95rem;
+  border-radius: 50%;
+  background: var(--ink);
+  box-shadow: 0 0 0 2px var(--brass), 0 0 0 3px rgba(0,0,0,.08);
+}
+
+.md-typeset h3 { font-family: "Marcellus", serif; font-weight: 400; color: var(--md-primary-fg-color--light); }
+
+/* ---- Bols: the hero material. Monospace so syllables align like beats. ---- */
+.md-typeset pre > code {
+  font-family: "IBM Plex Mono", monospace;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--crimson);
+  border-radius: 4px;
+  font-size: .92rem;
+  line-height: 1.9;
+  color: #2c211a;
+  padding: 1rem 1.1rem;
+  white-space: pre-wrap;      /* wrap long bol phrases instead of clipping */
+  overflow-wrap: anywhere;
+}
+.md-typeset pre { box-shadow: 0 1px 0 rgba(180,116,74,.12); }
+
+/* Inline code (e.g. bols mentioned in prose) */
+.md-typeset code {
+  background: var(--ivory-2);
+  color: var(--crimson);
+  border-radius: 3px;
+}
+
+/* ---- "Alternate for Palta N" notes ---- */
+.md-typeset blockquote {
+  border-left: 3px solid var(--sienna);
+  background: var(--ivory-2);
+  border-radius: 0 4px 4px 0;
+  color: #3a2d24;
+}
+.md-typeset blockquote strong { color: var(--sienna); font-family: "Spectral"; }
+
+/* ---- Video players ---- */
+.md-typeset iframe,
+.md-typeset video {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 6px 22px rgba(36,28,23,.22);
+  margin: .3rem 0 1.6rem;
+  background: #000;
+}
+
+/* ---- Header / nav chrome ---- */
+.md-header { background: var(--ink); box-shadow: 0 1px 0 var(--brass); }
+.md-tabs   { background: var(--ink); }
+.md-header__title { font-family: "Marcellus", serif; letter-spacing: .02em; }
+
+/* Sidebar section labels = brass eyebrows */
+.md-nav__title { font-family: "Marcellus", serif; color: var(--sienna); }
+.md-nav { font-size: .72rem; }
+.md-nav__link--active { color: var(--crimson) !important; }
+
+/* ============================================================
+   HERO — home page only (.tabla-hero injected in index.md)
+   Opens on the Teentaal theka in Devanagari: the signature.
+   ============================================================ */
+.tabla-hero {
+  margin: -1.2rem 0 2.4rem;
+  padding: 2.8rem 2rem 2.4rem;
+  background:
+    radial-gradient(circle at 82% 30%, rgba(198,151,47,.10), transparent 40%),
+    linear-gradient(160deg, #2a2019 0%, var(--ink) 60%, #17110d 100%);
+  border-radius: 12px;
+  color: var(--ivory);
+  position: relative;
+  overflow: hidden;
+}
+/* the gaab disc, drawn in CSS, sitting off the right edge */
+.tabla-hero::after {
+  content: "";
+  position: absolute;
+  right: -70px; top: 50%;
+  transform: translateY(-50%);
+  width: 230px; height: 230px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 34%, #4a3a2e 0%, #1a1310 62%, #0d0907 100%);
+  box-shadow: 0 0 0 10px rgba(198,151,47,.22), inset 0 0 40px rgba(0,0,0,.6);
+  opacity: .9;
+}
+.tabla-hero__eyebrow {
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: .28em;
+  font-size: .62rem;
+  color: var(--brass);
+  margin: 0 0 1.1rem;
+}
+.tabla-hero__theka {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  line-height: 1.5;
+  margin: 0;
+  color: var(--ivory);
+  position: relative; z-index: 1;
+  max-width: 18ch;
+}
+.tabla-hero__theka .sam { color: var(--brass); }   /* the sam — first, emphatic beat */
+.tabla-hero__roman {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .8rem;
+  letter-spacing: .06em;
+  color: #d8c9ae;
+  margin: 1rem 0 0;
+  position: relative; z-index: 1;
+}
+.tabla-hero__label {
+  font-family: "Spectral", serif;
+  font-style: italic;
+  color: #b7a988;
+  margin: .4rem 0 0;
+  font-size: .78rem;
+  position: relative; z-index: 1;
+}
+
+/* the four semesters, as a taal of four vibhags */
+.tabla-vibhags {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .8rem;
+  margin: 1.8rem 0 0;
+}
+.tabla-vibhag {
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--crimson);
+  border-radius: 6px;
+  padding: .9rem 1rem;
+  background: #fffdf8;
+}
+.tabla-vibhag a { font-family: "Marcellus", serif; color: var(--ink) !important; text-decoration: none; }
+.tabla-vibhag .n {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--brass);
+  font-size: .62rem;
+  letter-spacing: .18em;
+  display: block;
+  margin-bottom: .25rem;
+}
+
+@media (max-width: 44rem) {
+  .tabla-vibhags { grid-template-columns: repeat(2, 1fr); }
+  .tabla-hero::after { display: none; }
+}
+
+/* respect reduced-motion (nothing animates yet, but keep the floor) */
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }

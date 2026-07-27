@@ -3,21 +3,13 @@ site_description: Beginner-level tabla curriculum with demonstration videos
 
 theme:
   name: material
+  # Single light theme (no dark mode). Palette + type driven by docs/stylesheets/extra.css,
+  # grounded in the physical instrument (syahi ink, cushion crimson, wood, brass, ochre paper).
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep orange
-      accent: amber
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep orange
-      accent: amber
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
+    scheme: default
+    primary: black
+    accent: red
+  font: false
   features:
     - navigation.sections
     - navigation.expand
@@ -26,6 +18,9 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition
