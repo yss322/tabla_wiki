@@ -1,0 +1,61 @@
+site_name: Tabla Beginner Lessons
+site_description: Beginner-level tabla curriculum with demonstration videos
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Semester 1:
+      - 10 Initial Practice Exercises: semester-1/01-practice-exercises.md
+      - Te te Kaayda: semester-1/02-te-te-kaayda.md
+      - Tere kete Kaayda: semester-1/03-tere-kete-kaayda.md
+      - Chakradhaar Tukda: semester-1/04-chakradhaar-tukda.md
+      - Tukda: semester-1/05-tukda.md
+  - Semester 2:
+      - Tere kete Rela: semester-2/01-tere-kete-rela.md
+      - Chakradhaar Tukda: semester-2/02-chakradhaar-tukda.md
+      - Mukhda: semester-2/03-mukhda.md
+      - Dha te te Dha te te Kaayda: semester-2/04-dha-te-te-kaayda.md
+  - Semester 3:
+      - Dha tere kete tako Rela: semester-3/01-dha-tere-kete-tako-rela.md
+      - Tukda (1): semester-3/02-tukda.md
+      - Ghe ghe te te Kaayda: semester-3/03-ghe-ghe-te-te-kaayda.md
+      - Tukda (2): semester-3/04-tukda-2.md
+  - Semester 4:
+      - Dha ge te te Kaayda: semester-4/01-dha-ge-te-te-kaayda.md
+      - Tukda: semester-4/02-tukda.md
+      - Dhere Dhere Rela: semester-4/03-dhere-dhere-rela.md
+      - Tishra Jaati Kaayda: semester-4/04-tishra-jaati-kaayda.md
